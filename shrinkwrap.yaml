@@ -7,6 +7,7 @@ dependencies:
   helmet: 3.21.3
   mongodb: 2.2.36
   passport: 0.4.1
+  passport-github: 1.1.0
   passport-local: 1.0.0
   pug: 2.0.4
 packages:
@@ -119,6 +120,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  /base64url/3.0.1:
+    dev: false
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C/sLNnRESKPl23nB9b2pltqfOQNnGzsDdId90AEtG5tCx4A==
   /bcrypt/4.0.1:
     dependencies:
       node-addon-api: 2.0.0
@@ -920,6 +927,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+  /oauth/0.9.15:
+    dev: false
+    resolution:
+      integrity: sha1-vR/vr2hslrdUda7VGWQS/2DPucE=
   /object-assign/4.1.1:
     dev: false
     engines:
@@ -971,6 +982,14 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==
+  /passport-github/1.1.0:
+    dependencies:
+      passport-oauth2: 1.5.0
+    dev: false
+    engines:
+      node: '>= 0.4.0'
+    resolution:
+      integrity: sha1-jOHj/NYa11eOsd9ZWDnkrqEjVdQ=
   /passport-local/1.0.0:
     dependencies:
       passport-strategy: 1.0.0
@@ -979,6 +998,18 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha1-H+YyaMkudWBmJkN+O5BmYsFbpu4=
+  /passport-oauth2/1.5.0:
+    dependencies:
+      base64url: 3.0.1
+      oauth: 0.9.15
+      passport-strategy: 1.0.0
+      uid2: 0.0.3
+      utils-merge: 1.0.1
+    dev: false
+    engines:
+      node: '>= 0.4.0'
+    resolution:
+      integrity: sha512-kqBt6vR/5VlCK8iCx1/KpY42kQ+NEHZwsSyt4Y6STiNjU+wWICG1i8ucc1FapXDGO15C5O5VZz7+7vRzrDPXXQ==
   /passport-strategy/1.0.0:
     dev: false
     engines:
@@ -1440,6 +1471,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-KPHm4VL5dDXKz01UuEd88Df+KzynaohSL9fBh096KWAxSKZQDI2uBrVqtvRM4rwrIrRRKsdLNML/lnaaVSRioA==
+  /uid2/0.0.3:
+    dev: false
+    resolution:
+      integrity: sha1-SDEm4Rd03y9xuLY53NeZw3YWK4I=
   /unpipe/1.0.0:
     dev: false
     engines:
@@ -1528,5 +1563,6 @@ specifiers:
   helmet: ^3.4.0
   mongodb: ^2.2.22
   passport: ^0.4.1
+  passport-github: ^1.1.0
   passport-local: ^1.0.0
   pug: ^2.0.4
